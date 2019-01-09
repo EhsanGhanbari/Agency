@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Agency.Application.ViewModel.TaxiViewModel>
+@{
+    ViewBag.Title = "List";
+}
+
+@foreach (var item in Model)
+{
+    <div>
+        @item.Name
+    </div>
+
+    <div>
+        @item.Telephone1
+        @item.Telephone2
+        @item.Telephone3
+    </div>
+
+    <div>
+        @item.UniqueCode
+    </div>
+}
+
